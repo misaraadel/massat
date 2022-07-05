@@ -1,0 +1,38 @@
+<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Logo 1">
+<g id="Logo">
+<g id="Icon">
+<path id="translate_bottom_2" style="transform-origin: center; transform-box: fill-box; animation: translateY2 3s linear infinite;" d="M59.75 0H45.75V46H59.75V0Z" fill="white"/>
+<path id="translate_bottom_1" style="transform-origin: center; transform-box: fill-box; animation: translateY2 3s linear infinite;" d="M30.266 0H16.266V46H30.266V0Z" fill="white"/>
+<path id="translate_top_3" style="transform-origin: center; transform-box: fill-box; animation: translateY 3s linear infinite;" d="M75 29H61V75H75V29Z" fill="white"/>
+<path id="translate_top_2" style="transform-origin: center; transform-box: fill-box; animation: translateY 3s linear infinite;" d="M44.5 29H30.5V75H44.5V29Z" fill="white"/>
+<path id="translate_top_1" style="transform-origin: center; transform-box: fill-box; animation: translateY 3s linear infinite;" d="M15 29H0V75H15V29Z" fill="white"/>
+</g>
+</g>
+</g>
+<style>
+  @keyframes translateY {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-8px);
+      
+    }
+  }
+
+  @keyframes translateY2 {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(8px);
+      
+    }
+  }
+</style>
+</svg>
