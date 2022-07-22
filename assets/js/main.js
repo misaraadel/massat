@@ -79,4 +79,72 @@ $(document).ready(function () {
             },
         }
     });
+
+    var swiper = new Swiper('.reports-swiper', {
+        loop: true,
+        speed: 900,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 2500,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+            },
+            640: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 2,
+            },
+        }
+    });
+
+    var swiper = new Swiper('.article-swiper', {
+        loop: true,
+        speed: 900,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 2500,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+            },
+            640: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        }
+    });
+
+    var swiper = new Swiper('.service-swiper', {
+        loop: true,
+        speed: 900,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 2500,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 1,
+    });
 });
