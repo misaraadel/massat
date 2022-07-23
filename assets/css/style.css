@@ -3704,5 +3704,15 @@ footer .copyrights p {
   .all-services .content .service-img {
     height: 300px;
   }
+  .mobile-hidden {
+    display: none;
+  }
+  .join-us {
+    margin-top: -130px;
+    padding-bottom: 45px;
+  }
+  .join-us .join-contain {
+    padding: 30px 15px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
