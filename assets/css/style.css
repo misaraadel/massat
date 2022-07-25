@@ -144,7 +144,7 @@ ul {
             transform: scale(1);
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
-    opacity: 1;
+    opacity: 0;
   }
   20% {
     -webkit-transform: scale(0.7);
@@ -190,7 +190,7 @@ ul {
             transform: scale(1);
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
-    opacity: 1;
+    opacity: 0;
   }
   20% {
     -webkit-transform: scale(0.7);
@@ -470,6 +470,42 @@ ul {
     opacity: 0;
     -webkit-transform: scale(1.4);
             transform: scale(1.4);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes pulsecustR {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulsecustR {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   100% {
     opacity: 1;
@@ -1879,6 +1915,12 @@ header .content h2 {
   margin-bottom: 10px;
 }
 
+header .content h2 span {
+  -webkit-animation: pulsecustR 2s linear infinite;
+          animation: pulsecustR 2s linear infinite;
+  display: inline-block;
+}
+
 header .content p {
   font-size: 16px;
   font-weight: 500;
@@ -3022,7 +3064,7 @@ header .socail-media .media a img:hover {
 
 .join-us .content .image-content {
   width: 100%;
-  height: 698px;
+  height: 100% !important;
 }
 
 .join-us .content .image-content img {
@@ -3114,6 +3156,31 @@ header .socail-media .media a img:hover {
   margin-bottom: 10px;
 }
 
+.join-us .content .join-contain .form-group.select::after {
+  content: '';
+  position: absolute;
+  width: 20px !important;
+  height: 20px !important;
+  background: url("../images/slide_arrow.svg") center/contain no-repeat;
+  top: calc(50% - 10px);
+  left: 10px !important;
+  -webkit-transform: scaleY(1) rotate(90deg) !important;
+          transform: scaleY(1) rotate(90deg) !important;
+  -webkit-filter: invert(50%) sepia(54%) saturate(501%) hue-rotate(133deg) brightness(101%) contrast(88%);
+          filter: invert(50%) sepia(54%) saturate(501%) hue-rotate(133deg) brightness(101%) contrast(88%);
+  z-index: 9;
+  pointer-events: none;
+  border: 0px !important;
+}
+
+.join-us .content .join-contain .form-group.select .form-control {
+  color: #9D9D9D !important;
+}
+
+.join-us .content .join-contain .form-group.select:hover .form-control {
+  border-color: #10C8BD;
+}
+
 .join-us .content .join-contain .form-group.textarea {
   height: 100px;
 }
@@ -3171,6 +3238,9 @@ header .socail-media .media a img:hover {
   color: #33A5A9;
   font-size: 15px;
   font-weight: 500;
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
 }
 
 .join-us .content .join-contain .form-group .form-control::-webkit-input-placeholder {
