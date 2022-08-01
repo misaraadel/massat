@@ -9,6 +9,76 @@
   --gray: #A1A1A1;
 }
 
+html[dir='ltr'] {
+  header {
+    &::after {
+      transform: scaleX(-1);
+    }
+  }
+
+  .about-us .content {
+    .list li::after ,
+    &::after {
+      right: unset !important;
+      left: 0px;
+    }
+
+    &::before {
+      left: unset !important;
+      right: 0px;
+    }
+
+    .list li::after {
+      transform: scaleX(-1);
+    }
+  }
+
+  .services .box .pattern-img {
+    right: unset;
+    left: -50%;
+  }
+
+  .swiper-button-prev {
+    left: unset !important;
+  }
+
+  .contact-us .content::after{
+    left: unset !important;
+    right: 0px !important;
+  }
+
+  .join-us .content .join-contain .form-group.select::after,
+  .email .content .email-contain .form-group .buttons-contain{
+    right: 10px;
+    left: unset !important;
+  }
+
+  .join-us .content .join-contain .form-group img,
+  .email .content .email-contain .form-group::after,
+ .form-contain .form-group img {
+    left: 15px !important;
+    right: unset !important;
+  }
+
+  .all-services .content .service-list li::after,
+  .report-box::after,
+  .general-heading .heading::after  {
+    left: 0px;
+    right: unset;
+  }
+
+  .general-heading .buttons-contain {
+    &::after {
+      border-right: 1px solid rgba(51, 165, 169, 0.15) !important;
+      border-left: 0px;
+    }
+
+    &::before {
+      border-left: 1px solid rgba(51, 165, 169, 0.15) ;
+    }
+  }
+}
+
 .buttons-contain {
   display: flex;
   align-items: center;
@@ -22,6 +92,8 @@
     align-content: center;
     position: relative;
     z-index: 9;
+    outline: none;
+    border: 0px !important;
     justify-content: center;
     background: linear-gradient(180deg, #1D8E87, #33A5A9);
 
