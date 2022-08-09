@@ -141,6 +141,28 @@
   }
 }
 
+@keyframes word {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: fit-content;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: fit-content;
+  }
+}
+
 @keyframes spinner {
   0% {
     transform: rotate(0deg) scale3d(1, 1, 1);
@@ -428,13 +450,13 @@
 
 @keyframes clip {
   0% {
-    clip-path: polygon(57% 41%, 100% 0, 52% 46%, 0 100%);
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
   }
   50% {
-    clip-path: polygon(57% 41%, 100% 0, 0 0, 0 100%);
+    clip-path: polygon(100% 0, 51% 0, 51% 100%, 100% 100%);
   }
   100% {
-    clip-path: polygon(100% 100%, 100% 0, 0 0, 0 100%);
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
   }
 }
 
