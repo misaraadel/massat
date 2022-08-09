@@ -1657,11 +1657,12 @@ header {
             border: 0px;
             border-radius: 0px;
             color: var(--primary-color);
-            font-size: 16px;
-            font-weight: 900;
+            font-size: 13px;
+            font-weight: 700;
             background-color: rgba($color: #33A5A9, $alpha: 0.08);
             position: relative;
             z-index: 9;
+            text-align: center;
 
             &::after {
               content: '';
