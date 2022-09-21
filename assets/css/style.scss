@@ -14,6 +14,24 @@ html[dir='ltr'] {
     &::after {
       transform: scaleX(-1);
     }
+
+    .content {
+      h1 {
+        font-size: 44px;
+      }
+
+      h2 {
+        font-size: 48px;
+        align-items: flex-end;
+        align-content: flex-end;
+      }
+    }
+  }
+
+  .navbar {
+    .buttons-contain .custom-btn {
+      width: 180px !important;
+    }
   }
 
   .about-us .content {
@@ -881,6 +899,7 @@ header {
 
   .box {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2060,7 +2079,21 @@ header {
 footer {
   width: 100%;
   padding: 141px 0px 16px 0px;
-  background: url('../images/footer/footer.png') center / cover no-repeat;
+  background-color: #171717;
+  position: relative;
+  z-index: 9;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../images/footer/footer.webp') center / cover no-repeat;
+    top: 0;
+    left: 0;
+    opacity: .06;
+    z-index: -1;
+  }
 
   &.footer {
     padding-top: 232px !important;
